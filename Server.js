@@ -151,4 +151,6 @@ app.put("/profile/delete", (req, res) => {
 //   res.send("success");
 // });
 
-app.listen(2500);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`app is running in port ${process.env.PORT}`)
+});

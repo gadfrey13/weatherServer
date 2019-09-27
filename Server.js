@@ -138,16 +138,7 @@ app.put("/profile/delete", (req, res) => {
     .catch(err => res.status(503).json("unable to connect to database"));
 });
 
-//NOTES
-// app.post("/profile", (req, res) => {
-//   //req.query gets the query from the client. Query always start with ? example localhost:3000/profile/?name=jack&age=19
-//   //req.body what is send through the body
-//   //req.header you get the header values. for example content type
-//   //req.params you use the parameters of the url. Example '/:id'
-//   console.log(req.body);
-//   //res can status for example res.status(404).send("not found");
-//   res.send("success");
-// });
+
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(`app is running in port ${process.env.PORT}`)

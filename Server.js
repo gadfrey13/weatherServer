@@ -14,11 +14,7 @@ const db = knex({
   }
 });
 
-// //express has a concept of middleware
-// //middleware is use to make you process
-// app.use((req,res,next) => {
-//     next();//you need next to cascade downwards.
-// })
+
 //this is so you can form urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 //so you can read a json file

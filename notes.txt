@@ -8,3 +8,9 @@
 //   //res can status for example res.status(404).send("not found");
 //   res.send("success");
 // });
+
+\// //express has a concept of middleware
+// //middleware is use to make you process
+// app.use((req,res,next) => {
+//     next();//you need next to cascade downwards.
+// })
